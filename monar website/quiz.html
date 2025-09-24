@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاستبيان — مُنار</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="m/logo.png" alt="شعار مُنار" class="logo-img">
+        </div>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="careers.html">المهن المستقبلية</a>
+            <a href="skills.html">مهاراتي</a>
+            <a href="quiz.html">الاستبيان</a>
+            <a href="resources.html">المصادر</a>
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-login">تسجيل الدخول</a>
+            <a href="register.html" class="btn-register">حساب جديد</a>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <h1>اختبار الميول المهنية</h1>
+        <p>أجيبي عن الأسئلة التالية لاكتشاف المهن التي تناسب شخصيتك.</p>
+        
+        <form id="holland-quiz-form">
+            <div class="question-card">
+                <h3>اهتمامات عملية</h3>
+                <p>أي من هذه الأنشطة تثير اهتمامك أكثر؟</p>
+                <label><input type="checkbox" name="realistic" value="1"> إصلاح الأجهزة الإلكترونية أو الميكانيكية.</label>
+                <label><input type="checkbox" name="realistic" value="1"> العمل في الهواء الطلق، مثل الزراعة أو البناء.</label>
+                <label><input type="checkbox" name="realistic" value="1"> استخدام الأدوات اليدوية أو الآلات.</label>
+            </div>
+
+            <div class="question-card">
+                <h3>اهتمامات بحثية</h3>
+                <p>أي من هذه الأنشطة تثير اهتمامك أكثر؟</p>
+                <label><input type="checkbox" name="investigative" value="1"> إجراء تجارب علمية أو بحث في موضوع معين.</label>
+                <label><input type="checkbox" name="investigative" value="1"> حل الألغاز المعقدة أو المسائل الرياضية.</label>
+                <label><input type="checkbox" name="investigative" value="1"> قراءة مقالات عن التكنولوجيا والعلوم.</label>
+            </div>
+
+            <div class="question-card">
+                <h3>اهتمامات فنية</h3>
+                <p>أي من هذه الأنشطة تثير اهتمامك أكثر؟</p>
+                <label><input type="checkbox" name="artistic" value="1"> الرسم، النحت، أو تصميم الأزياء.</label>
+                <label><input type="checkbox" name="artistic" value="1"> كتابة القصص، الشعر، أو الأغاني.</label>
+                <label><input type="checkbox" name="artistic" value="1"> العزف على آلة موسيقية أو التمثيل.</label>
+            </div>
+
+            <div class="question-card">
+                <h3>اهتمامات اجتماعية</h3>
+                <p>أي من هذه الأنشطة تثير اهتمامك أكثر؟</p>
+                <label><input type="checkbox" name="social" value="1"> مساعدة الآخرين في حل مشاكلهم.</label>
+                <label><input type="checkbox" name="social" value="1"> تدريس أو تعليم مهارات جديدة للناس.</label>
+                <label><input type="checkbox" name="social" value="1"> العمل ضمن فريق أو التطوع في مجتمع.</label>
+            </div>
+
+            <div class="question-card">
+                <h3>اهتمامات مبادرة</h3>
+                <p>أي من هذه الأنشطة تثير اهتمامك أكثر؟</p>
+                <label><input type="checkbox" name="enterprising" value="1"> بيع المنتجات أو الترويج لفكرة.</label>
+                <label><input type="checkbox" name="enterprising" value="1"> قيادة مجموعة أو تنظيم فعالية.</label>
+                <label><input type="checkbox" name="enterprising" value="1"> التفاوض وإقناع الآخرين بوجهة نظرك.</label>
+            </div>
+
+            <div class="question-card">
+                <h3>اهتمامات تقليدية</h3>
+                <p>أي من هذه الأنشطة تثير اهتمامك أكثر؟</p>
+                <label><input type="checkbox" name="conventional" value="1"> تنظيم الملفات أو البيانات بشكل دقيق.</label>
+                <label><input type="checkbox" name="conventional" value="1"> العمل في مكتب أو في بيئة منظمة.</label>
+                <label><input type="checkbox" name="conventional" value="1"> التعامل مع الأرقام أو السجلات المالية.</label>
+            </div>
+
+            <button type="submit" class="btn">عرض النتائج</button>
+        </form>
+
+        <div id="quiz-results" style="display: none;">
+            </div>
+
+    </main>
+
+    <footer>
+        حقوق الطبع والنشر والطباعة للطالبة مريم الكحلاوي © 2025
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>
